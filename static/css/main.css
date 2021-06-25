@@ -1,0 +1,91 @@
+@font-face { font-family: Adventor; src: url('../media/tex-gyre-adventor-regular.6268d592.woff2') format('woff2'); }
+@font-face { font-family: Adventor; font-weight: bold; src: url('../media/tex-gyre-adventor-bold.444db04e.woff2') format('woff2');}
+
+body {
+  font-family: 'Adventor';
+  background-color: #01002a;
+  color: white
+}
+
+
+table.report-c1 {
+  margin: 30px 10px 30px 10px;
+  border: 0px solid #144A68;
+  border-radius: 15px 15px 15px 15px;
+  background-color: #144A68;
+  width: 127%;
+}
+
+table.report-c1 td, table.report th {
+  padding: 15px 16px;
+}
+
+table.report-c1 tbody td {
+  font-family: 'Adventor';
+  font-size: 15px;
+  color: #FFFFFF;
+  text-align: center;
+  text-shadow: 1px 1px #01002a;
+}
+
+table.report-c2 {
+  margin: 30px 10px 30px 30px;
+  border: 0px solid #144A68;
+  border-radius: 15px 50px;
+  background-color: #0C2A4D;
+  width: 140%;
+}
+
+table.report-c2 td, table.report th {
+  padding: 18px 70px;
+}
+
+table.report-c2 tbody td {
+  font-family: 'Adventor';
+  font-size: 15px;
+  color: #FFFFFF;
+  text-shadow: 1px 1px #01002a;
+}
+
+table.report-c2 thead th {
+  font-size: 18px;
+  padding: 18px 70px;
+  font-family: 'Adventor';
+  color: #FFFFFF;
+  text-shadow: 2px 2px #01002a;
+}
+
+table.report-c2-ls {
+  margin: 30px 10px 30px 470px;
+  border: 0px solid #144A68;
+  border-radius: 15px 50px;
+  background-color: #0C2A4D;
+  width: 70%;
+}
+
+table.report-c2-ls thead th {
+  font-size: 18px;
+  padding: 18px 70px;
+  font-family: 'Adventor';
+  color: #FFFFFF;
+  text-align: right;
+  text-shadow: 2px 2px #01002a;
+}
+
+div.footer-c1 {
+  font-family: 'Adventor';
+  font-size: 14px;
+  text-align: left;
+  margin-left: 10px;
+  color: #cbd6d3;
+  text-shadow: 1px 1px #01002a;
+}
+
+div.footer-c2 {
+  font-family: 'Adventor';
+  font-size: 14px;
+  text-align: right;
+  margin-left: 80px;
+  color: #cbd6d3;
+  text-shadow: 1px 1px #01002a;
+}
