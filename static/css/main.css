@@ -13,7 +13,7 @@ table.report-c1 {
   border: 0px solid #144A68;
   border-radius: 15px 15px 15px 15px;
   background-color: #144A68;
-  width: 127%;
+  width: 100%;
 }
 
 table.report-c1 td, table.report th {
@@ -22,49 +22,61 @@ table.report-c1 td, table.report th {
 
 table.report-c1 tbody td {
   font-family: 'Adventor';
-  font-size: 15px;
+  font-size: 14px;
   color: #FFFFFF;
   text-align: center;
   text-shadow: 1px 1px #01002a;
 }
 
 table.report-c2 {
-  margin: 30px 10px 30px 30px;
+  margin: 30px 10px 30px 10px;
   border: 0px solid #144A68;
   border-radius: 15px 50px;
   background-color: #0C2A4D;
-  width: 140%;
+  max-width: 100%;
 }
 
 table.report-c2 td, table.report th {
-  padding: 18px 70px;
+  padding: 18px 55px;
 }
 
 table.report-c2 tbody td {
   font-family: 'Adventor';
-  font-size: 15px;
+  font-size: 14px;
   color: #FFFFFF;
   text-shadow: 1px 1px #01002a;
 }
 
-table.report-c2 thead th {
-  font-size: 18px;
-  padding: 18px 70px;
+table.report-c2-fr td, table.report th {
+  padding: 16px 24px;
+}
+
+table.report-c2-fr {
+  margin: 30px 10px 30px 10px;
+  border: 0px solid #144A68;
+  border-radius: 15px 50px;
+  background-color: #0C2A4D;
+  max-width: 100%;
+}
+
+table.report-c2-fr thead th {
+  font-size: 16px;
+  padding: 16px 16px;
   font-family: 'Adventor';
   color: #FFFFFF;
   text-shadow: 2px 2px #01002a;
 }
 
 table.report-c2-ls {
-  margin: 30px 10px 30px 470px;
+  margin: 30px 10px 30px 410px;
   border: 0px solid #144A68;
   border-radius: 15px 50px;
   background-color: #0C2A4D;
-  width: 70%;
+  max-width: 70%;
 }
 
 table.report-c2-ls thead th {
-  font-size: 18px;
+  font-size: 16px;
   padding: 18px 70px;
   font-family: 'Adventor';
   color: #FFFFFF;
