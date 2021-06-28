@@ -95,3 +95,17 @@ div.footer-c2 {
   color: #cbd6d3;
   text-shadow: 1px 1px #01002a;
 }
+
+
+@media only screen and (max-width: 480px) {
+table.report-c2-fr {
+  width: 200%;
+}
+
+table.report-c2 {
+  width: 200%;
+}
+
+table.report-c2-ls {
+  width: 160%;
+}
