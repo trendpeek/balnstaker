@@ -26,9 +26,8 @@ FAQs
 
 4) How do you calculate the network fee rewards?
 
-  A) We read the divident info by calling getUserDividends(account, start, end) from balanced smart contract for dividents. 
-
-     You can find the smartcontract here 
+  A) We read the divident info by calling getUserDividends(account, start, end) from balanced smart contract for dividents.
+     You can find the smart contract below.    
 
      https://tracker.icon.foundation/contracts/1?count=25&keyword=balanced
 
