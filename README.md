@@ -19,7 +19,9 @@ A) Yes, the network rewards displayed are for staking and/or providing liquidity
 A) Yes, the network rewards displayed are for staking and/or providing liquidity.
 
 4) How do you calculate the network fee rewards?
-A) We read the divident info by calling getUserDividends(account, start, end) from balanced smart contract for dividents. You can find the smartcontract here https://tracker.icon.foundation/contracts/1?count=25&keyword=balanced
+A) We read the divident info by calling getUserDividends(account, start, end) from balanced smart contract for dividents. 
+You can find the smartcontract here 
+https://tracker.icon.foundation/contracts/1?count=25&keyword=balanced
 
 5) Do you calculate using daily snapshots, is that correct?
 A) Balnstaker do not calculate the rewards, it just read daily snapshot info from balanced smartcontract. Same as you read price info or APY info by calling smartcontract.
