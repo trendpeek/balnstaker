@@ -27,12 +27,20 @@ def isEarningRewards(account, id) -> int:
 
 
 def getUserDividends(account, start, end) -> tuple:
-    call = CallBuilder().from_("hx0000000000000000000000000000000000000001")\
-                        .to(DIVIDENTS_CONTRACT)\
-                        .method("getUserDividends")\
-                        .params({"_account": account, "_start": start, "_end": end})\
-                        .build()
-    return icon_service.call(call), 0
+    print("here 0")
+    call = CallBuilder().from_("hx0000000000000000000000000000000000000001") \
+        .to(DIVIDENTS_CONTRACT) \
+        .method("getUserDividends") \
+        .params({"_account": account, "_start": start, "_end": end}) \
+        .build()
+    result = icon_service.call(call)
+    if result == {}:
+        return {"cx0000000000000000000000000000000000000000": "0x0",
+                "cxf61cd5a45dc9f91c15aa65831a30a90d59a09619": "0x0",
+                "cx88fd7df7ddff82f7cc735c871dc519838cb235bb": "0x0",
+                "cx2609b924e33ef00b648a409245c7ea394c467824": "0x0"}, 0
+    else:
+        return result, 0
 
 
 def getDay() -> int:
