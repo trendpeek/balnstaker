@@ -1,0 +1,27 @@
+.page-item.disabled .page-link{
+    background-color: #0C2A4D    !important;
+}
+
+.page-item.previous.disabled .page-link{
+    background-color: #0C2A4D   !important;
+}
+
+.page-item.next.disabled .page-link{
+    background-color: #0C2A4D   !important;
+}
+
+.page-item.active .page-link{
+    background-color: #2CA9B7     !important;
+    color: #ffffff               !important;
+}
+
+.page-item:hover .page-link{
+    background-color: #2CA9B7    !important;
+    color: #ffffff               !important;
+}
+
+a.page-link{
+    background-color: #0C2A4D     !important;
+    color: #C0C0C0                !important;
+    border: none;                 !important;
+}

@@ -7,16 +7,37 @@ body {
   color: white
 }
 
+table.table-Txhistory {
+  width: 100% !important;
+  border-radius: 15px 15px 15px 15px;
+  background-color: #0C2A4D;
+  padding: 3% 4% 3% 4%;
+}
+
+table.table-Txhistory thead tr {
+  font-size: 0.9em;
+  font-family: 'Adventor';
+  font-weight: normal;
+}
+
+table.table-Txhistory td, table.table-Txhistory th {
+  font-family: 'Adventor';
+  font-size: 0.9em;
+  color: #C0C0C0;
+  padding: 3% 0%;
+  border: none;
+}
+
 table.report-c1 {
-  margin: 10% 1% 3% 1%;
+  margin: 0% 1% 0% 1%;
   border: 0px solid #144A68;
   border-radius: 15px 15px 15px 15px;
   background-color: #144A68;
   width: 110%;
 }
 
-table.report-c1 td, table.report-c1 th {
-  padding: 11% 0%;
+table.report-c1 td {
+  padding: 10% 0%;
 }
 
 table.report-c1 tbody td {
@@ -27,16 +48,16 @@ table.report-c1 tbody td {
   text-shadow: 1px 1px #01002a;
 }
 
-table.report-c2-fr {
-  margin: 3% 1% 3% 1%;
+table.report-c2-1 {
+  margin: 0% 1% 0% 0%;
   border: 0px solid #144A68;
-  border-radius: 15px 50px;
+  border-radius: 15px 15px;
   background-color: #0C2A4D;
   width: 100%;
   height: 14%
 }
 
-table.report-c2-fr thead tr {
+table.report-c2-1 thead tr {
   font-size: 1.0em;
   font-family: 'Adventor';
   color: #FFFFFF;
@@ -44,34 +65,41 @@ table.report-c2-fr thead tr {
   text-shadow: 2px 2px #01002a;
 }
 
-table.report-c2 {
-  margin: 3% 1% 3% 1%;
+table.report-c2-2 {
+  margin: 0% 1% 0% 0%;
   border: 0px solid #144A68;
-  border-radius: 15px 50px;
+  border-radius: 15px 15px;
   background-color: #0C2A4D;
   width: 100%;
 }
 
-table.report-c2 tbody td {
+table.report-c2-2 thead th {
+  font-size: 0.9em;
+  font-family: 'Adventor';
+  color: #2CA9B7;
+  padding: 2% 0% 2% 4%
+}
+
+table.report-c2-2 tbody td {
   font-family: 'Adventor';
   font-size: 0.9em;
-  padding: 3% 6% 2% 8%;
+  padding: 1% 6% 3% 4%;
+  text-align: center;
   color: #FFFFFF;
   text-shadow: 1px 1px #01002a;
 }
 
-table.report-c2-ls {
-  margin: 3% 1% 3% 41%;
+table.report-c2-3 {
+  margin: 0% 1% 0% 40%;
   border: 0px solid #144A68;
-  border-radius: 15px 50px;
+  border-radius: 15px 15px;
   background-color: #0C2A4D;
   width: 60%;
 }
 
-
-table.report-c2-ls thead th {
+table.report-c2-3 thead th {
   font-size: 1.0em;
-  padding: 4% 20% 4% 5%;
+  padding: 4% 10% 4% 5%;
   font-family: 'Adventor';
   color: #FFFFFF;
   text-align: right;
@@ -96,16 +124,32 @@ div.footer-c2 {
   text-shadow: 1px 1px #01002a;
 }
 
-
 @media only screen and (max-width: 480px) {
-table.report-c2-fr {
-  width: 200%;
-}
+    table.report-c1 {
+      margin-top: -20%;
+      margin-bottom: 14%;
+      font-size: 100%;
+    }
 
-table.report-c2 {
-  width: 200%;
-}
+    table.report-c2-1 {
+      width: 180%;
+      font-size: 80%;
+    }
 
-table.report-c2-ls {
-  width: 160%;
+    table.report-c2-2 {
+      width: 180%;
+      font-size: 80%;
+    }
+
+    table.report-c2-3 {
+      width: 160%;
+      margin-left: 20%;
+      margin-bottom: 0% !important;
+      font-size: 80%;
+    }
+
+    table.table-Txhistory {
+      width: 135% !important;
+      font-size: 80%;
+    }
 }

@@ -27,7 +27,6 @@ def isEarningRewards(account, id) -> int:
 
 
 def getUserDividends(account, start, end) -> tuple:
-    print("here 0")
     call = CallBuilder().from_("hx0000000000000000000000000000000000000001") \
         .to(DIVIDENTS_CONTRACT) \
         .method("getUserDividends") \
