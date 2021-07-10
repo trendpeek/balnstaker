@@ -66,10 +66,8 @@ def calculate_tx_age():
         date_string = tx_data[i]["date"]
         date_object = datetime.strptime(date_string[:19], "%Y-%m-%dT%H:%M:%S")
         age_delta = datetime.utcnow().replace(tzinfo=pytz.utc) - date_object.replace(tzinfo=pytz.utc)
-        if int(age_delta.seconds / 3600) <= 1:
-            hourString = " hour"
-        else:
-            hourString = " hours"
-        age = str(age_delta.days) + " days " + str(int(age_delta.seconds / 3600)) + hourString + " ago"
+        age = str(age_delta.days) + \
+              (" day " if int(age_delta.days) <= 1 else " days ") + \
+              str(int(age_delta.seconds / 3600)) + \
+              (" hour" if int(age_delta.seconds / 3600) <= 1  else " hours") + " ago"
         tx_data[i]["date"] = age
-
