@@ -70,4 +70,4 @@ def calculate_tx_age():
               (" day " if int(age_delta.days) <= 1 else " days ") + \
               str(int(age_delta.seconds / 3600)) + \
               (" hour" if int(age_delta.seconds / 3600) <= 1  else " hours") + " ago"
-        tx_data[i]["date"] = age
+        tx_data[i]["date"] = date_object
