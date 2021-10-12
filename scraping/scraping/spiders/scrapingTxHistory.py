@@ -46,7 +46,7 @@ class TxSpider(scrapy.Spider):
 
     def parse(self, response):
         self.pageCount = getpagecount(self.userAddress)
-        for page in range(1, self.pageCount + 1, 1):
+        for page in range(1, self.pageCount + 2, 1):
             url = f'https://tracker.icon.foundation/v3/address/txList?page={page}&count=100&address={self.userAddress}'
             yield scrapy.Request(url,
                                  callback=self.parse_json,
