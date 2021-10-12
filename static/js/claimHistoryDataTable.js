@@ -9,7 +9,7 @@
                "language": {
                "emptyTable": "No data available"
                },
-               "order": [[ 1, "asc" ]],
+               "order": [[ 1, "dec" ]],
                "info": false,
                "lengthChange": false,
                "searching": false
