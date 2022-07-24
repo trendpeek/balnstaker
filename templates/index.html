@@ -25,6 +25,12 @@
    </head>
 
    <body>
+       <div class="alert">
+         <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
+         <strong>Info!</strong> To view correct results <a href="https://app.balanced.network/claim" class="alert-link">claim</a> 
+         all fees earned before continuous rewards go live (July 21, 2022).
+      </div>
+  
       <nav class="navbar navbar-dark ">
          <div class="container my-4">
             <div class="col-auto">
@@ -94,7 +100,6 @@
                   <thead>
                      <tr>
                            <td><b style="color:#2CA9B7;">BALN Staked: </b> __________ </td>
-                           <td><b style="color:#2CA9B7;">BALN to LP:</b> __________ </td>
                            <td><b style="color:#2CA9B7;">Network Fee: </b>__________</td>
                      </tr>
                   </thead>
@@ -110,7 +115,6 @@
                   <tbody>
                      <tr>
                         <td style="color:#C0C0C0; vertical-align:top; text-align:left;">Token</td>
-                        <td style="color:#C0C0C0; padding-left:15%">Last Snapshot (unclaimed)</td>
                         <td style="color:#C0C0C0;">Total (unclaimed)</td>
                         <td style="color:#C0C0C0;">Total (claimed)</td>
                      </tr>
@@ -118,18 +122,15 @@
                         <td>BALN</td>
                         <td style = "padding-left:15%">________</td>
                         <td>________</td>
-                        <td>________</td>
                      </tr>
                      <tr>
                         <td>bnUSD</td>
                         <td style = "padding-left:15%">________</td>
                         <td>________</td>
-                        <td>________</td>
                      </tr>
                      <tr>
                         <td>sICX</td>
                         <td style = "padding-left:15%">________</td>
-                        <td>________</td>
                         <td>________</td>
                      </tr>
                   </tbody>
@@ -149,12 +150,6 @@
                   <thead>
                      <tr>
                            <td><b style="color:#2CA9B7;"> BALN Staked: </b>{{"%.2f"|format(user.balance["staked"])}} </td>
-                           <td><b style="color:#2CA9B7;">BALN to LP:</b>
-                           {% if user.isLP %}
-                           Supplied
-                           {% else %}
-                           Not Supplied
-                           {% endif %}
                            </td>
                            <td><b style="color:#2CA9B7;">Network Fee:</b>
                            {% if user.iseligible %}
@@ -177,25 +172,21 @@
                   <tbody>
                      <tr>
                         <td style="color:#C0C0C0; vertical-align:top; text-align:left;">Token</td>
-                        <td style="color:#C0C0C0; padding-left:15%">Last Snapshot (unclaimed)</td>
                         <td style="color:#C0C0C0;">Total (unclaimed)</td>
                         <td style="color:#C0C0C0;">Total (claimed)</td>
                      </tr>
                      <tr>
                         <td>BALN</td>
-                        <td style = "padding-left:15%">{{"%.4f"|format(user.lastBALNdividents)}}</td>
                         <td>{{"%.4f"|format(user.totalBALNdividents)}}</td>
                         <td>{{"%.4f"|format(user.totalBALNdividents_claimed|round(4, 'floor'))}}</td>
                      </tr>
                      <tr>
                         <td>bnUSD</td>
-                        <td style = "padding-left:15%">{{"%.4f"|format(user.lastBNUSDdividents)}}</td>
                         <td>{{"%.4f"|format(user.totalBNUSDdividents)}}</td>
                         <td>{{"%.4f"|format(user.totalBNUSDdividents_claimed|round(4, 'floor'))}}</td>
                      </tr>
                      <tr>
                         <td>sICX</td>
-                        <td style = "padding-left:15%">{{"%.4f"|format(user.lastSICXdividents)}}</td>
                         <td>{{"%.4f"|format(user.totalSICXdividents)}}</td>
                         <td>{{"%.4f"|format(user.totalSICXdividents_claimed|round(4, 'floor'))}}</td>
 
